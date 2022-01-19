@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Emailer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>PHPmailer</h1>
+  <p>Simple mailing website</p> 
+</div>
+
+<div class="container alert alert-danger">
+  <form action="email_sender.php" method="POST">
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Email Adress:</span>
+      </div>
+      <input type="text" name="address" class="form-control" placeholder="Enter email to send to" aria-label="Username" aria-describedby="basic-addon1">
+
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Title:</span>
+      </div>
+      <input type="text" name="title" class="form-control" placeholder="Title of email" aria-label="Username" aria-describedby="basic-addon1">
+
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Content of email</span>
+        </div>
+        <textarea class="form-control" name="message" aria-label="Message"></textarea>
+      </div>
+
+    </div>
+    <br>
+
+    <button type="submit" class="btn btn-primary">Send!</button>
+  </form>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>what is PHPmailer</h3>
+      <p>PHPmailer is a open source projet thats free to use by the public with restritions of modicftion. Its currently under the GNU Lesser General Public License. </p>
+      <br>
+      <a href="https://github.com/PHPMailer/PHPMailer">link to thier github</a>
+    </div>
+    <div class="col-sm-4">
+    </div>
+    <div class="col-sm-4">
+      <h3>This code </h3>        
+      <p>The code used for this is viewable at</p>
+      <a href="https://github.com/Harissharp/PHPmailer_website"> This Link </a>
+      <br>
+      <br>
+    </div>
+  </div>
+</div>
+<br>
+<h3 class=jumbotron text-center>the showcase of code working<h3>
+<br>
+
+<h3>Sending </h3>
+<img src="sending_ev.png" alt="Showing the code works(sending an email by webiste) "  width="1200" height="500">
+<br>
+
+<h3>Receiving </h3>
+<img src="incoming_ev.png" alt="Showing the code works(showing the email has arrived in the inbox sent by webiste) "  width="1200" height="500">
+<br>
+
+<h3>Reply</h3>
+<img src="reply_ev.png" alt="Showing the code works(replying to the email) "  width="1200" height="500">
+
+<!-- Footer -->
+<footer class="page-footer font-small blue alert alert-secondary">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2022 Copyright:
+    <a href="https://mdbootstrap.com/"> Haris Sharp</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</body>
+</html>
